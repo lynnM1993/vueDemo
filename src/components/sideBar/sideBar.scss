@@ -1,0 +1,47 @@
+.side-bar-box{
+  box-sizing: border-box;
+  position: absolute;
+  height:100vh;
+  width: 2rem;
+  background: #42b983;
+  padding-bottom:55px;
+  padding-top: 40px;
+  overflow: hidden;
+  top:0;
+  left:0;
+  z-index: 1001;
+}
+.mask-modal{
+  width: 100%;
+  height:100vh;
+  z-index: 1000;
+}
+.side-bar-box-outer{
+  width: 100%;
+  height:100vh;
+  left:0;
+  top:0;
+  position: absolute;
+}
+.side-bar-box-action{
+  //animation-play-state: paused;
+  //animation: openSide 3s;
+  //width: 2rem;
+  //display: block;
+}
+.side-box-close{
+  //animation-play-state: paused;
+  //animation: closeSide 5s;
+  //width: 0;
+  //display: none;
+}
+@keyframes closeSide
+{
+  from {width: 2rem;}
+  to {width: 0;}
+};
+@keyframes openSide
+{
+  from {width:0;}
+  to {width: 2rem;}
+}
